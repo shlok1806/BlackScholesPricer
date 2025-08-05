@@ -184,7 +184,7 @@ with col2:
 # Display Greeks if available
 if hasattr(bs_model, 'call_delta'):
     st.markdown("### Greeks")
-    greeks_col1, greeks_col2, greeks_col3 = st.columns(4)
+    greeks_col1, greeks_col2, greeks_col3 = st.columns(3)
     
     with greeks_col1:
         st.metric("Call Delta", f"{bs_model.call_delta:.4f}")
